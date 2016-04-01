@@ -1,5 +1,5 @@
 all:
-	ghc -o hello hello.hs
+	ghc *.hs
 	rm *.o
 	rm *.hi
 
