@@ -21,9 +21,10 @@ merge a b i j =
 
 mergeSort l = 
 	if (length l) > 2
-	then merge (
-		mergeSort (take (div (length l) 2) l)) (
-		mergeSort (drop (div (length l) 2) l)) 0 0
+	then merge
+			(mergeSort (take (div (length l) 2) l))
+			(mergeSort (drop (div (length l) 2) l))
+			0 0
 	else
 		if (length l) < 2
 		then l
